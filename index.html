@@ -12,168 +12,213 @@
         .twentytwenty-after-label::before { content: "ALOT"; }
     </style>
 </head>
-<body>
-    <nav class="navbar navbar-dark bg-dark">
-        <span class="navbar-brand mb-0 h1">ALOT Texture Comparisons</span>
+<body data-spy="scroll" data-target="#navbar-comparisons" data-offset="150">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <span class="navbar-brand">ALOT Texture Comparisons</span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuGetALOT" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Get ALOT
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuGetALOT">
+                        <a class="dropdown-item" href="https://www.nexusmods.com/masseffect/mods/83">Mass Effect 1</a>
+                        <a class="dropdown-item" href="https://www.nexusmods.com/masseffect2/mods/68/">Mass Effect 2</a>
+                        <a class="dropdown-item" href="https://www.nexusmods.com/masseffect3/mods/363/">Mass Effect 3</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </nav>
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
-            <div class="card w-100 m-3">
-                <div class="comparison">
-                    <img data-lazy data-original="img/anderson-vanilla.jpg" id="and-van">
-                    <img data-lazy data-original="img/anderson-alot.jpg">                    
+            <aside class="col-lg-2 d-none d-lg-block">
+                <nav id="navbar-comparisons" class="navbar navbar-light bg-light sticky-top mt-3">
+                    <a class="navbar-brand" href="#">Screenshots</a>
+                    <nav class="nav nav-pills flex-column">
+                        <a class="nav-link" href="#anderson" data-scroll>Anderson</a>
+                        <a class="nav-link" href="#aria" data-scroll>Aria</a>
+                        <a class="nav-link" href="#ashley" data-scroll>Ashley</a>
+                        <a class="nav-link" href="#garrus" data-scroll>Garrus</a>
+                        <a class="nav-link" href="#jack" data-scroll>Jack</a>
+                        <a class="nav-link" href="#joker" data-scroll>Joker</a>
+                        <a class="nav-link" href="#kaidan" data-scroll>Kaidan</a>
+                        <a class="nav-link" href="#ledra" data-scroll>Ledra</a>
+                        <a class="nav-link" href="#liara" data-scroll>Liara</a>
+                        <a class="nav-link" href="#miranda" data-scroll>Miranda</a>
+                        <a class="nav-link" href="#pallin" data-scroll>Pallin</a>
+                        <a class="nav-link" href="#receptionist" data-scroll>Receptionist</a>
+                        <a class="nav-link" href="#shepard-female" data-scroll>Shepard (Female)</a>
+                        <a class="nav-link" href="#shepard-male" data-scroll>Shepard (Male)</a>
+                        <a class="nav-link" href="#tali" data-scroll>Tali</a>
+                        <a class="nav-link" href="#wrex" data-scroll>Wrex</a>
+                        <a class="nav-link" href="#wrex-tuchanka" data-scroll>Wrex (Tuchanka)</a>
+                    </nav>
+                </nav>
+            </aside>
+            <section class="col-lg-10 col-sm-12">
+                <div class="card w-100 mt-3" id="anderson">
+                    <div class="comparison">
+                        <img data-lazy data-original="img/anderson-vanilla.jpg" id="and-van">
+                        <img data-lazy data-original="img/anderson-alot.jpg">                    
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Anderson</h5>
+                    </div>
                 </div>
-                <div class="card-body">
-                    <h5 class="card-title">Anderson</h5>
+                <div class="card w-100 mt-3" id="aria">
+                    <div class="comparison">
+                        <img data-lazy data-original="img/aria-vanilla.jpg">
+                        <img data-lazy data-original="img/aria-alot.jpg">                    
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Aria</h5>
+                    </div>
                 </div>
-            </div>
-            <div class="card w-100 m-3">
-                <div class="comparison">
-                    <img data-lazy data-original="img/aria-vanilla.jpg">
-                    <img data-lazy data-original="img/aria-alot.jpg">                    
+                <div class="card w-100 mt-3" id="ashley">
+                    <div class="comparison">
+                        <img data-lazy data-original="img/ashley-vanilla.jpg">
+                        <img data-lazy data-original="img/ashley-alot.jpg">                    
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Ashley</h5>
+                    </div>
                 </div>
-                <div class="card-body">
-                    <h5 class="card-title">Aria</h5>
+                <div class="card w-100 mt-3" id="garrus">
+                    <div class="comparison">
+                        <img data-lazy data-original="img/garrus-vanilla.jpg">
+                        <img data-lazy data-original="img/garrus-alot.jpg">                    
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Garrus</h5>
+                    </div>
                 </div>
-            </div>
-            <div class="card w-100 m-3">
-                <div class="comparison">
-                    <img data-lazy data-original="img/ashley-vanilla.jpg">
-                    <img data-lazy data-original="img/ashley-alot.jpg">                    
+                <div class="card w-100 mt-3" id="jack">
+                    <div class="comparison">
+                        <img data-lazy data-original="img/jack-vanilla.jpg">
+                        <img data-lazy data-original="img/jack-alot.jpg">                    
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Jack</h5>
+                    </div>
                 </div>
-                <div class="card-body">
-                    <h5 class="card-title">Ashley</h5>
+                <div class="card w-100 mt-3" id="joker">
+                    <div class="comparison">
+                        <img data-lazy data-original="img/joker-vanilla.jpg">
+                        <img data-lazy data-original="img/joker-alot.jpg">                    
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Joker</h5>
+                    </div>
                 </div>
-            </div>
-            <div class="card w-100 m-3">
-                <div class="comparison">
-                    <img data-lazy data-original="img/garrus-vanilla.jpg">
-                    <img data-lazy data-original="img/garrus-alot.jpg">                    
+                <div class="card w-100 mt-3" id="kaidan">
+                    <div class="comparison">
+                        <img data-lazy data-original="img/kaidan-vanilla.jpg">
+                        <img data-lazy data-original="img/kaidan-alot.jpg">                    
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Kaidan</h5>
+                    </div>
                 </div>
-                <div class="card-body">
-                    <h5 class="card-title">Garrus</h5>
+                <div class="card w-100 mt-3" id="ledra">
+                    <div class="comparison">
+                        <img data-lazy data-original="img/ledra-vanilla.jpg">
+                        <img data-lazy data-original="img/ledra-alot.jpg">                    
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Ledra</h5>
+                    </div>
                 </div>
-            </div>
-            <div class="card w-100 m-3">
-                <div class="comparison">
-                    <img data-lazy data-original="img/jack-vanilla.jpg">
-                    <img data-lazy data-original="img/jack-alot.jpg">                    
+                <div class="card w-100 mt-3" id="liara">
+                    <div class="comparison">
+                        <img data-lazy data-original="img/liara-vanilla.jpg">
+                        <img data-lazy data-original="img/liara-alot.jpg">                    
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Liara</h5>
+                    </div>
                 </div>
-                <div class="card-body">
-                    <h5 class="card-title">Jack</h5>
+                <div class="card w-100 mt-3" id="miranda">
+                    <div class="comparison">
+                        <img data-lazy data-original="img/miranda-vanilla.jpg">
+                        <img data-lazy data-original="img/miranda-alot.jpg">                    
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Miranda</h5>
+                    </div>
                 </div>
-            </div>
-            <div class="card w-100 m-3">
-                <div class="comparison">
-                    <img data-lazy data-original="img/joker-vanilla.jpg">
-                    <img data-lazy data-original="img/joker-alot.jpg">                    
+                <div class="card w-100 mt-3" id="pallin">
+                    <div class="comparison">
+                        <img data-lazy data-original="img/pallin-vanilla.jpg">
+                        <img data-lazy data-original="img/pallin-alot.jpg">                    
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Pallin</h5>
+                    </div>
                 </div>
-                <div class="card-body">
-                    <h5 class="card-title">Joker</h5>
+                <div class="card w-100 mt-3" id="receptionist">
+                    <div class="comparison">
+                        <img data-lazy data-original="img/receptionist-vanilla.jpg">
+                        <img data-lazy data-original="img/receptionist-alot.jpg">                    
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Receptionist</h5>
+                    </div>
                 </div>
-            </div>
-            <div class="card w-100 m-3">
-                <div class="comparison">
-                    <img data-lazy data-original="img/kaidan-vanilla.jpg">
-                    <img data-lazy data-original="img/kaidan-alot.jpg">                    
+                <div class="card w-100 mt-3" id="shepard-female">
+                    <div class="comparison">
+                        <img data-lazy data-original="img/shepard-female-vanilla.jpg">
+                        <img data-lazy data-original="img/shepard-female-alot.jpg">                    
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Shepard (Female)</h5>
+                    </div>
                 </div>
-                <div class="card-body">
-                    <h5 class="card-title">Kaidan</h5>
+                <div class="card w-100 mt-3" id="shepard-male">
+                    <div class="comparison">
+                        <img data-lazy data-original="img/shepard-male-vanilla.jpg">
+                        <img data-lazy data-original="img/shepard-male-alot.jpg">                    
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Shepard (Male)</h5>
+                    </div>
                 </div>
-            </div>
-            <div class="card w-100 m-3">
-                <div class="comparison">
-                    <img data-lazy data-original="img/ledra-vanilla.jpg">
-                    <img data-lazy data-original="img/ledra-alot.jpg">                    
+                <div class="card w-100 mt-3" id="tali">
+                    <div class="comparison">
+                        <img data-lazy data-original="img/tali-vanilla.jpg">
+                        <img data-lazy data-original="img/tali-alot.jpg">                    
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Tali</h5>
+                    </div>
                 </div>
-                <div class="card-body">
-                    <h5 class="card-title">Ledra</h5>
+                <div class="card w-100 mt-3" id="wrex">
+                    <div class="comparison">
+                        <img data-lazy data-original="img/wrex-vanilla.jpg">
+                        <img data-lazy data-original="img/wrex-alot.jpg">                    
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Wrex</h5>
+                    </div>
                 </div>
-            </div>
-            <div class="card w-100 m-3">
-                <div class="comparison">
-                    <img data-lazy data-original="img/liara-vanilla.jpg">
-                    <img data-lazy data-original="img/liara-alot.jpg">                    
+                <div class="card w-100 mt-3" id="wrex-tuchanka">
+                    <div class="comparison">
+                        <img data-lazy data-original="img/wrex-tuchanka-vanilla.jpg">
+                        <img data-lazy data-original="img/wrex-tuchanka-alot.jpg">                    
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Wrex (Tuchanka)</h5>
+                    </div>
                 </div>
-                <div class="card-body">
-                    <h5 class="card-title">Liara</h5>
-                </div>
-            </div>
-            <div class="card w-100 m-3">
-                <div class="comparison">
-                    <img data-lazy data-original="img/miranda-vanilla.jpg">
-                    <img data-lazy data-original="img/miranda-alot.jpg">                    
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title">Miranda</h5>
-                </div>
-            </div>
-            <div class="card w-100 m-3">
-                <div class="comparison">
-                    <img data-lazy data-original="img/pallin-vanilla.jpg">
-                    <img data-lazy data-original="img/pallin-alot.jpg">                    
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title">Pallin</h5>
-                </div>
-            </div>
-            <div class="card w-100 m-3">
-                <div class="comparison">
-                    <img data-lazy data-original="img/receptionist-vanilla.jpg">
-                    <img data-lazy data-original="img/receptionist-alot.jpg">                    
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title">Receptionist</h5>
-                </div>
-            </div>
-            <div class="card w-100 m-3">
-                <div class="comparison">
-                    <img data-lazy data-original="img/shepard-female-vanilla.jpg">
-                    <img data-lazy data-original="img/shepard-female-alot.jpg">                    
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title">Shepard (Female)</h5>
-                </div>
-            </div>
-            <div class="card w-100 m-3">
-                <div class="comparison">
-                    <img data-lazy data-original="img/shepard-male-vanilla.jpg">
-                    <img data-lazy data-original="img/shepard-male-alot.jpg">                    
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title">Shepard (Male)</h5>
-                </div>
-            </div>
-            <div class="card w-100 m-3">
-                <div class="comparison">
-                    <img data-lazy data-original="img/tali-vanilla.jpg">
-                    <img data-lazy data-original="img/tali-alot.jpg">                    
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title">Tali</h5>
-                </div>
-            </div>
-            <div class="card w-100 m-3">
-                <div class="comparison">
-                    <img data-lazy data-original="img/wrex-vanilla.jpg">
-                    <img data-lazy data-original="img/wrex-alot.jpg">                    
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title">Wrex</h5>
-                </div>
-            </div>
-            <div class="card w-100 m-3">
-                <div class="comparison">
-                    <img data-lazy data-original="img/wrex-tuchanka-vanilla.jpg">
-                    <img data-lazy data-original="img/wrex-tuchanka-alot.jpg">                    
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title">Wrex (Tuchanka)</h5>
-                </div>
-            </div>
+            </section>
         </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js" integrity="sha256-rXnOfjTRp4iAm7hTAxEz3irkXzwZrElV2uRsdJAYjC4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mhayes-twentytwenty/1.0.0/js/jquery.event.move.min.js" integrity="sha256-fqXzZX48vO+Q2Uz6Wkh3veStRw4i24PfRgW7twugCxo=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mhayes-twentytwenty/1.0.0/js/jquery.twentytwenty.min.js" integrity="sha256-D2l9+EHv9C1Jk7FXmUNFnbtmFHowHewFTkbZTnzqdsg=" crossorigin="anonymous"></script>
@@ -182,6 +227,10 @@
             effect: "fadeIn",
             load: function () { $(this).parent(".comparison").twentytwenty(); }
         });
+        /*$("a[data-scroll]").click(function (event) {
+            event.preventDefault();
+            $("body, html").animate({scrollTop:$("#" + this.href.split("#")[1]).offset().top}, 800);
+        });*/
     </script>
 </body>
 </html>
